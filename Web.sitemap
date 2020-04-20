@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/WebForm1.aspx" title="Home"  description="Home">
+    <siteMapNode url="~/Site/onlyone.aspx" title="onlyone site"  description="We only have one site!" />
+    <siteMapNode title="查" description="查">
+      <siteMapNode url="~/Site/查询.aspx" title="查" description="查"/>
+    </siteMapNode>
+    <siteMapNode title="改" description="改">
+      <siteMapNode url="~/Site/改.aspx" title="改"/>
+    </siteMapNode>
+    <siteMapNode title="shan" description="shan">
+      <siteMapNode url="~/Site/删.aspx" title="shan" description="shan"/>
+    </siteMapNode>
+    <siteMapNode title="zeng" description="zeng">
+      <siteMapNode url="~/Site/增.aspx" title="zeng" description="zeng"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
