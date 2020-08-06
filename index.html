@@ -1,2 +1,51 @@
 <a href="https://www.bilibili.com/">演示链接，它指向B站主页</a>
-<!DOCTYPE html><html><head><h1>任意经生成器</h1></head><body>	<DIV style="font-size:9pt; "><p>前缀</p><input type="text" name="front" id="front" value="" />  <p>主体</p>  <input type="text" name="main" id="main" value="" />  <p>后缀</p>  <input type="text" name="behind" id="behind" value="平安" />	<p></p>  <button id="btn" onclick="gen()">生成</button>		<style>		  #btn { 	   color: #FFFFFF;	   border-radius:10px;       width:80px;  height:5px;  	   background:linear-gradient(to right, #757575,#212121);	   opacity:0.5;       width: 50px;        height:30px;        display: block;	   background-color:transparent;    }		</style>  <p>输出</p>  <textarea name="output" id="output" style="width: 20%;height: 100px"></textarea>		</div>		  <script type="text/javascript">			function gen() {				var master = document.getElementById("front").value;				var event = document.getElementById("main").value.split(" ");				var reason = document.getElementById("behind").value;				var output=""								for (i = 0; i < event.length; i++) {					document.getElementById("output").value = ""					output=output+master+event[i]+reason+","				}				output = output.substring(0, output.length - 1);output=output+"。"				console.log(output)				document.getElementById("output").value = output			}  </script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<h1>任意经生成器</h1>
+</head>
+<body>
+	<DIV style="font-size:9pt; ">
+<p>前缀</p>
+<input type="text" name="front" id="front" value="" />
+  <p>主体</p>
+  <input type="text" name="main" id="main" value="" />
+  <p>后缀</p>
+  <input type="text" name="behind" id="behind" value="平安" />
+	<p></p>
+  <button id="btn" onclick="gen()">生成</button>
+		<style>
+		  #btn { 
+	   color: #FFFFFF;
+	   border-radius:10px;
+       width:80px;  height:5px;  
+	   background:linear-gradient(to right, #757575,#212121);
+	   opacity:0.5;
+       width: 50px; 
+       height:30px; 
+       display: block;
+	   background-color:transparent;
+    }
+		</style>
+  <p>输出</p>
+  <textarea name="output" id="output" style="width: 20%;height: 100px"></textarea>
+		</div>
+		
+  <script type="text/javascript">
+			function gen() {
+				var master = document.getElementById("front").value;
+				var event = document.getElementById("main").value.split(" ");
+				var reason = document.getElementById("behind").value;
+				var output=""
+				
+				for (i = 0; i < event.length; i++) {
+					document.getElementById("output").value = ""
+					output=output+master+event[i]+reason+","
+				}
+				output = output.substring(0, output.length - 1);output=output+"。"
+				console.log(output)
+				document.getElementById("output").value = output
+			}
+  </script>
+</body>
+</html>
